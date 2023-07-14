@@ -1,0 +1,25 @@
+.ultimas-noticias {
+    background-color: #F4F4F4;
+    margin-top: 61px;
+    padding-block: 70px;
+
+    &__slider {
+        margin-top: 50px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 50px;
+        justify-content: center;
+    }
+
+    &__imagem {
+        figcaption {
+            font-size: px-rem(19px);
+            font-weight: 300;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

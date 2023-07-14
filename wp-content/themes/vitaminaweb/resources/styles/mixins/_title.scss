@@ -1,0 +1,36 @@
+@mixin title-h1 {
+    font-size: px-rem(18px);
+    font-weight: 700;
+    line-height: (20/18);
+
+    @include responsive-notebook {
+        font-size: px-rem(36px);
+        line-height: (44/36);
+    }
+}
+
+@mixin subtitle {
+    font-size: px-rem(18px);
+    font-weight: 200;
+    line-height: (39/32);
+
+    @include responsive-notebook {
+        font-size: px-rem(32px);
+    }
+}
+
+@mixin tituloSecao {
+    color: $azul;
+    font-family: $font-family;
+    font-size: px-rem(50px);
+    font-weight: 300;
+    text-align: center;
+}
+
+@mixin subtituloSecao {
+    color: $azul;
+    font-family: $font-andrea;
+    font-size: px-rem(27px);
+    font-weight: 400;
+    text-align: center;
+}

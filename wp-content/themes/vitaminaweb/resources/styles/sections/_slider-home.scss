@@ -1,0 +1,66 @@
+.slider-home {
+    margin: 48px 0 70px;
+    
+    &__item {
+        padding-block: 70px 120px;
+        padding-inline: 25px;
+        position: relative;
+
+        @include responsive-notebook {
+            padding-inline: 100px;
+        }
+
+        .c-title {
+            color: $white;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .c-subtitle {
+            color: $white;
+            position: relative;
+        }
+    }
+
+    &__bg-image {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        img {
+            @include image-size;
+        }
+    }
+
+    &__content {
+        color: $white;
+        position: relative;
+
+        &-number {
+            font-family: 'Arial', sans-serif;
+            font-size: px-rem(70px);
+            font-weight: 700;
+            margin: 80px 0 10px;
+
+            @include responsive-notebook {
+                margin: 155px 0 10px;
+            }
+        }
+
+        &-title {
+            font-size: px-rem(40px);
+            font-weight: 400;
+            margin-bottom: 30px;
+            max-width: px-rem(626px);
+        }
+
+        &-text {
+            font-size: px-rem(20px);
+            font-weight: 400;
+            line-height: (25/20);
+            max-width: px-rem(705px);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.diferenciais {
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c-text {
+        margin-bottom: 25px;
+        max-width: 1110px;
+        padding-inline: 55px;
+    }
+
+    .c-link {
+        margin-top: 25px;
+    }
+
+    &__texto-bottom {
+        color: #85680D;
+        font-family: "AndreaIIScriptUpright", Arial, sans-serif;
+        font-size: 1.875rem;
+        line-height: 0.83333;
+        margin-top: 57px;
+        text-align: center;
+    }
+}

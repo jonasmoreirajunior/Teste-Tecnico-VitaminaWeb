@@ -1,0 +1,8 @@
+.c-title {
+    @include tituloSecao;
+    text-transform: uppercase;
+}
+
+.c-subtitle {
+    @include subtituloSecao;
+}

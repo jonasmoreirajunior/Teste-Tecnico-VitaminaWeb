@@ -1,0 +1,185 @@
+.c-footer {
+    background-color: #EBEBEB;
+    padding: px-rem(79px) 0 px-rem(31px);
+    position: relative;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin: 0 auto 81px;
+        max-width: px-rem(143px);
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__title {
+        color: $azul-claro;
+        font-size: px-rem(17px);
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        &:not(:first-of-type) {
+            margin-top: 20px;
+        }
+    }
+
+    &__link,
+    &__text {
+        color: $cinza;
+        font-size: px-rem(14px);
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    &__menus {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 175px;
+
+        .footer-menu {
+            .menu-footer {
+                @include remove-list-apparence;
+                align-items: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px 175px;
+
+                >.menu-item>a {
+                    color: $azul-claro;
+                    display: block;
+                    font-size: px-rem(17px);
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+
+                .sub-menu {
+                    @include remove-list-apparence;
+
+                    .menu-item {
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+
+                        a {
+                            color: $cinza;
+                            font-size: px-rem(14px);
+                            font-weight: 400;
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .c-link {
+            font-size: px-rem(12px);
+            height: 35px;
+            line-height: 35px;
+            padding: 0 15px;
+            margin-top: 20px;
+        }
+    }
+
+    &__socials {
+        ul {
+            @include remove-list-apparence;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    align-items: center;
+                    display: flex;
+                    gap: 0 15px;
+                    color: $cinza;
+                    font-size: px-rem(14px);
+                    font-weight: 400;
+                    letter-spacing: 0.42px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__cookies {
+        color: $cinza;
+        font-size: px-rem(14px);
+        font-weight: 400;
+        margin-top: 70px;
+        text-align: center;
+
+        &::before {
+            background: #5F5F5F;
+            content: '';
+            display: block;
+            height: 0.359px;
+            margin-bottom: 15px;
+            opacity: 0.5;
+            width: 100%;
+        }
+
+        a {
+            color: $azul-claro;
+            font-size: px-rem(12px);
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &__copy {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__direitos {
+        color: $cinza;
+        font-size: px-rem(14px);
+        font-weight: 400;
+        letter-spacing: 0.42px;
+    }
+
+    &__desenvolvimento {
+        align-items: center;
+        color: $cinza;
+        display: flex;
+        font-size: px-rem(10px);
+        font-weight: 400;
+        gap: 0 5px;
+        text-transform: uppercase;
+    }
+
+    .barra-lateral {
+        position: fixed;
+        background: #1C314D;
+        top: 230px;
+        right: 0;
+        z-index: 999999;
+
+        ul {
+            @include remove-list-apparence;
+            padding-block: 13px;
+            padding-inline: 15px;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

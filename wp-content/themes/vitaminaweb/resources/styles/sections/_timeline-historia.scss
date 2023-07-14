@@ -1,0 +1,18 @@
+.timeline-historia {
+    padding-top: 50px;
+
+    &__texto {
+        margin: 50px auto 0;
+        max-width: px-rem(1110px);
+    }
+
+    h4 {
+        color: #85680D;
+        font-family: $font-andrea;
+        font-size: px-rem(30px);
+        font-weight: 400;
+        line-height: (25/30);
+        margin-top: 70px;
+        text-align: center;
+    }
+}

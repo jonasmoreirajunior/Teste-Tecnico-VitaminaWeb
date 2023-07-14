@@ -1,0 +1,20 @@
+.c-link {
+    display: inline-block;
+    text-decoration: none;
+
+    &--blue {
+        @include transition-theme(background-color, 0.2s);
+        background-color: $azul-links;
+        border-radius: 5px;
+        color: $white;
+        font-size: px-rem(18px);
+        font-weight: 400;
+        height: 50px;
+        line-height: 50px;
+        padding-inline: 20px;
+
+        &:hover {
+            background-color: $azul;
+        }
+    }
+}

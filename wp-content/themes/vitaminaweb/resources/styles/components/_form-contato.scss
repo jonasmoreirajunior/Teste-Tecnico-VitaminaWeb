@@ -1,0 +1,74 @@
+.c-form-contato {
+    max-width: 540px;
+    margin: 41px auto 0;
+
+    label {
+        color: $azul;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: px-rem(14px);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    input,
+    select,
+    textarea {
+        border: 0;
+        border-bottom: 3px solid $azul;
+        color: $cinza;
+        font-family: $font-family;
+        font-size: px-rem(16px);
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        outline: none;
+        width: 100%;
+    }
+
+    input::placeholder,
+    select::placeholder,
+    textarea::placeholder {
+        color: $cinza;
+        font-family: $font-family;
+        font-size: px-rem(16px);
+        font-weight: 400;
+        letter-spacing: 0.48px;
+    }
+
+    input,
+    select {
+        height: 25px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .estadoCidade {
+        display: flex;
+        gap: 0 30px;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .wpcf7-not-valid-tip {
+        color: $cinza;
+        font-family: $font-family;
+        font-weight: 400;
+    }
+
+    input[type="submit"] {
+        border: 0;
+        color: $white;
+        display: block;
+        height: max-content;
+        margin: 0 auto;
+        text-transform: uppercase;
+        width: max-content;
+    }
+}

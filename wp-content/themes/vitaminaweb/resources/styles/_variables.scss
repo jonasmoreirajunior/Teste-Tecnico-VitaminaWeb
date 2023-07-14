@@ -1,0 +1,31 @@
+// Colors
+$blue: #041B3A;
+$azul: #041B3A;
+$white: #FFFFFF;
+$cinza: #5F5F5F;
+$azul-claro: #005A9B;
+$azul-links: #0068BC;
+
+// Theme Fonts
+$font-family: 'Gill Sans', Arial, sans-serif;
+$font-andrea: 'AndreaIIScriptUpright', Arial, sans-serif;
+$font-montserrat: 'Montserrat', Arial, sans-serif;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1380px
+);
+
+// Container max widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1266px
+);

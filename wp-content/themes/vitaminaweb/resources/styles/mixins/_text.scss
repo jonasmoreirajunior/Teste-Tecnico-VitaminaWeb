@@ -1,0 +1,8 @@
+@mixin textoSecao {
+    color: $cinza;
+    font-family: $font-family;
+    font-size: px-rem(20px);
+    font-weight: 300;
+    line-height: (25/20);
+    text-align: center;
+}

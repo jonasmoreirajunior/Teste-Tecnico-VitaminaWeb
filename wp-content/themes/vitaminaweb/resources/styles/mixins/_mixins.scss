@@ -1,0 +1,52 @@
+@mixin remove-list-apparence {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin remove-padding-margin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin remove-apparence-button {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+@mixin image-size($size: cover, $position: center) {
+    height: 100%;
+    object-fit: $size;
+    object-position: $position;
+    width: 100%;
+}
+
+@mixin transition-theme($property: all, $time: 0.1s) {
+    transition: $property $time ease-in;
+}
+
+@mixin flex-column-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin responsive-tablet {
+    @media (min-width: get-breakpoint(md)) {
+        @content;
+    }
+}
+
+@mixin responsive-notebook {
+    @media (min-width: get-breakpoint(xl)) {
+        @content;
+    }
+}
+
+@mixin responsive-desktop {
+    @media (min-width: get-breakpoint(xxl)) {
+        @content;
+    }
+}

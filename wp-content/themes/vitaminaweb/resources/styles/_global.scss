@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-family;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 px-rem(15px);
+
+    @include responsive-tablet {
+        max-width: container-width(lg);
+    }
+
+    @include responsive-notebook {
+        max-width: container-width(xl);
+    }
+
+    @include responsive-desktop {
+        max-width: container-width(xxl);
+    }
+}
