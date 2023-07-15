@@ -1,3 +1,68 @@
 .contato {
     padding-top: 50px;
+    padding-bottom: 97px;
+
+    p.c-text {
+        margin-top: 41px;
+    }
+
+    &.confirmacao-contato & {
+        &__unidades {
+            margin: 50px 0 0;
+        }
+
+        &__unidade {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__endereco {
+            background-color: $cinza-claro;
+            border-radius: 20px 0px 0px 20px;
+            padding: 20px;
+            width: 350px;
+
+            h4 {
+                color: $azul;
+                font-family: $font-andrea;
+                font-size: px-rem(35px);
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__infos {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            p:first-child {
+                color: $azul;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-size: px-rem(14px);
+                font-weight: bold;
+                letter-spacing: 0.42px;
+                line-height: (20.5/14);
+                text-transform: uppercase;
+            }
+
+            p:last-child {
+                color: #6D6E71;
+                font-size: px-rem(20px);
+                font-weight: 300;
+                line-height: (25/20);
+            }
+        }
+
+        &__imagem-unidade {
+            border-radius: 0 20px 20px 0;
+            margin: 0;
+            overflow: hidden;
+            max-width: 760px;
+
+            img {
+                @include image-size;
+            }
+        }
+    }
 }

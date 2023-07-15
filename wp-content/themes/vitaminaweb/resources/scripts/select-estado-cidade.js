@@ -11,16 +11,20 @@ export default function EstadoCidade() {
                     estadoSelect.innerHTML = '<option value="">Selecione</option>';
                     cidadeSelect.innerHTML = '<option value="">Selecione um estado</option>';
                     data.forEach(estado => {
+                        console.log(estado);
                         const option = document.createElement('option');
                         option.value = estado.id;
                         option.textContent = estado.nome;
+                        option.dataset.uf = estado.sigla;
                         estadoSelect.appendChild(option);
                     });
                 });
         }
 
-        estadoSelect.addEventListener('change', () => {
+        estadoSelect.addEventListener('change', (e) => {
             if (estadoSelect.value !== '') {
+                const selectedOption = e.currentTarget.options[e.currentTarget.selectedIndex];
+                e.currentTarget.dataset.uf = selectedOption.dataset.uf;
                 buscarCidades();
             } else {
                 cidadeSelect.innerHTML = '';
